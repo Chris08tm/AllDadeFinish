@@ -59,7 +59,7 @@
   <section class="landing-section" id="title">
     <div class="container-fluid">
       <video autoplay muted loop id="myVideo">
-        <source src="/Users/chrism1/Desktop/AllDadeFinish/videos/bgVid2.mp4" type="video/mp4">
+        <source src="videos/backgroundVid.mp4" type="video/mp4">
       </video>
       <!-- Title -->
       <div class="row big-heading-container">
@@ -74,7 +74,7 @@
       </div>
       <div class="row landing-button-container">
         <div class="col-lg-4"></div>
-        <div class="col-lg-4"><button type="button" class="contact-us-button"><i></i> Contact Us!</button></div>
+        <div class="col-lg-4"><a href="#contact"><button type="button" class="contact-us-button">Contact Us!</button></a></div>
         <div class="col-lg-4"></div>
       </div>
     </div>
@@ -161,34 +161,50 @@
   </section>
 
   <section class="white-section" id="contact">
-    <div class="container-fluid">
-      <h3 class="contact-heading">Contact Us</h3>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(Required)">
+    <form action="mailto:chris08tm@gmail.com" method="post" enctype="text/plain">
+      <div class="container-fluid">
+        <h3 class="contact-heading">Contact Us</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="(Required)">
+            </div>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address </label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(Required)">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Please add details of design ideas…</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+          <div class="col-lg-6">
+            <div class="mb-3">
+              <label for="emailAddress" class="form-label">Email address </label>
+              <input type="email" class="form-control" id="emailAddress" placeholder="(Required)">
             </div>
           </div>
         </div>
-      </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mb-3">
+                <label for="body" class="form-label">Please add details of design ideas…</label>
+                <textarea name ="body" class="form-control" rows="10"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="submit-button">Submit</button>
+      </form>
+      
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js%22%3E"></script>
+
+     
   </section>
-
-
 </body>
+ <!-- Footer -->
 
+ <footer class="white-section" id="footer">
+  <div class="container-fluid">
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-facebook-f"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i>
+    <p>© Copyright 2022 AllDadeFinish</p>
+  </div>
+</footer>
 </html>
